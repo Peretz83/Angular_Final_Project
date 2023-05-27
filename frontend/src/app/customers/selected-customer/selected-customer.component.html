@@ -1,0 +1,25 @@
+<div class="customer-sec">
+  <div class="">
+    <app-title [icon]="icon" [title]="title"></app-title>
+  </div>
+  <div id="card" class="card-wrap  p-3">
+
+
+    <img class="lecturer-img"
+      src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="">
+
+    <div class="info-sec">
+      <h3 class="name">{{customer?.fname}} {{customer?.lname}}</h3>
+      <p class="phone">{{customer?.phone}}</p>
+      <p class="email">{{customer?.email}}</p>
+      <p class="address">{{customer?.address}}</p>
+    </div>
+
+  </div>
+
+  <div class="btn-wrap">
+    <a routerLink="/customers">
+      <button class="btn btn-primary">Back</button>
+    </a>
+  </div>
+</div>

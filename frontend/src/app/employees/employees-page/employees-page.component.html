@@ -1,0 +1,52 @@
+<app-title [icon]="icon" [title]="title"></app-title>
+
+
+<div class="main-wrap">
+
+
+
+
+
+  <app-search-page></app-search-page>
+
+
+
+  <div>
+    <form id="employee-form" [formGroup]="addEmployeeForm" (ngSubmit)="onSubmit()">
+
+      <div>
+        <input formControlName="name" type="text" placeholder="Name">
+
+      </div>
+      <app-customer-validation [formField]="getFieldControl('name')"></app-customer-validation>
+      <div>
+        <input formControlName="email" type="text" placeholder="Email">
+
+      </div>
+      <app-customer-validation [formField]="getFieldControl('email')"></app-customer-validation>
+      <div>
+        <input formControlName="phone" type="text" placeholder="Phone">
+
+      </div>
+      <app-customer-validation [formField]="getFieldControl('phone')"></app-customer-validation>
+      <div>
+        <input formControlName="bDay" type="date" placeholder="Birthday">
+
+      </div>
+      <app-customer-validation [formField]="getFieldControl('bDay')"></app-customer-validation>
+
+      <div>
+        <button class="btn btn-primary" [disabled]="addEmployeeForm.invalid" type="submit"><i
+            class="bi bi-plus-circle-fill"></i>Add
+          employee</button>
+
+      </div>
+    </form>
+  </div>
+
+
+  <app-employee-display></app-employee-display>
+
+
+
+</div>

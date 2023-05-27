@@ -1,0 +1,11 @@
+.color-button{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(13, 197, 13);
+}
+#dot-wrap{
+display: flex;
+justify-content: center;
+align-items: center;
+}

@@ -1,0 +1,36 @@
+.addCustomerForm{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin:  50px auto;
+  width: 100%;
+
+}
+.form-wrap{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input{
+  width: 10rem;
+}
+button{
+  height: 40px;
+  margin-bottom: .7rem;
+  margin-left: 1rem;
+ 
+}
+
+.btn-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+span{
+  margin-right: 1rem;
+}
+/* #input-wrap{
+  margin-left: 2rem;
+} */

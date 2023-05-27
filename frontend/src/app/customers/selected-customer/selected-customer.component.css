@@ -1,0 +1,22 @@
+#card{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.lecturer-img{
+width: 100px;
+}
+
+.info-sec{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-wrap{
+  display: flex;
+justify-content: center;
+}
